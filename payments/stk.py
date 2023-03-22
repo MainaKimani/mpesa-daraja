@@ -1,4 +1,4 @@
-
+import os
 import requests
 
 from .utils import Mpesa_Access_Token, Transaction_Request_Details
@@ -18,7 +18,7 @@ class STK_push:
             "PartyA": phone_number,
             "PartyB": Transaction_Request_Details.Business_short_code,
             "PhoneNumber": phone_number,
-            "CallBackURL": "https://paymenthandler.free.beeceptor.com/",
+            "CallBackURL": os.environ.get('callbackURL'), #"https://payments-c5xb.onrender.com/callback/",
             "AccountReference": "STK-TEST",
             "TransactionDesc": "Testing stk push"
         }
