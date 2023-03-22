@@ -18,7 +18,7 @@ class STK_push:
             "PartyA": phone_number,
             "PartyB": Transaction_Request_Details.Business_short_code,
             "PhoneNumber": phone_number,
-            "CallBackURL": "https://callbackurl.free.beeceptor.com/",
+            "CallBackURL": "https://paymenthandler.free.beeceptor.com/",
             "AccountReference": "STK-TEST",
             "TransactionDesc": "Testing stk push"
         }
